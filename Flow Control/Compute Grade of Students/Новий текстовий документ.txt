@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void gradeOfStudents(double marks) {
+	if (marks >= 90) {
+		printf("A");
+	}
+	else if (marks >= 80 && marks < 90) {
+		printf("B");
+	}
+	else if (marks >= 70 && marks < 80) {
+		printf("C");
+	}
+	else {
+		printf("D");
+	}
+}
+
+
+int main() {
+	double marks;
+	scanf("%lf", &marks);
+
+	gradeOfStudents(marks);
+
+	return 0;
+}
